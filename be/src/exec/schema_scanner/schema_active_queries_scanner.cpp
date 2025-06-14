@@ -36,6 +36,7 @@ std::vector<SchemaScanner::ColumnDesc> SchemaActiveQueriesScanner::_s_tbls_colum
         {"WORKLOAD_GROUP_ID", TYPE_BIGINT, sizeof(int64_t), true},
         {"DATABASE", TYPE_VARCHAR, sizeof(StringRef), true},
         {"FRONTEND_INSTANCE", TYPE_VARCHAR, sizeof(StringRef), true},
+        {"CONNECTION_ID", TYPE_VARCHAR, sizeof(int64_t), true},
         {"QUEUE_START_TIME", TYPE_VARCHAR, sizeof(StringRef), true},
         {"QUEUE_END_TIME", TYPE_VARCHAR, sizeof(StringRef), true},
         {"QUERY_STATUS", TYPE_VARCHAR, sizeof(StringRef), true},

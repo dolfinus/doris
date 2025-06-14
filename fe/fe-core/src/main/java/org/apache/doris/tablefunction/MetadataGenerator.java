@@ -743,6 +743,12 @@ public class MetadataGenerator {
             }
             trow.addToColumnValue(new TCell().setStringVal(selfNode));
 
+            if (queryInfo.getConnectContext() != null) {
+                trow.addToColumnValue(new TCell().setLongVal(queryInfo.getConnectContext().getConnectionId()));
+            } else {
+                trow.addToColumnValue(new TCell().setLongVal(-1));
+            }
+
             long queueStartTime = queryInfo.getQueueStartTime();
             if (queueStartTime > 0) {
                 trow.addToColumnValue(new TCell().setStringVal(

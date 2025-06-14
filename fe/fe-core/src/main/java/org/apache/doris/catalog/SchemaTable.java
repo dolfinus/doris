@@ -490,6 +490,7 @@ public class SchemaTable extends Table {
                             .column("WORKLOAD_GROUP_ID", ScalarType.createType(PrimitiveType.BIGINT))
                             .column("DATABASE", ScalarType.createVarchar(256))
                             .column("FRONTEND_INSTANCE", ScalarType.createVarchar(256))
+                            .column("CONNECTION_ID", ScalarType.createType(PrimitiveType.BIGINT))
                             .column("QUEUE_START_TIME", ScalarType.createVarchar(256))
                             .column("QUEUE_END_TIME", ScalarType.createVarchar(256))
                             .column("QUERY_STATUS", ScalarType.createVarchar(256))
